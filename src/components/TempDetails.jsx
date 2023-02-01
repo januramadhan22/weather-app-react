@@ -1,5 +1,11 @@
 import React from "react";
-import { UilTemperature, UilTear, UilWind } from "@iconscout/react-unicons";
+import {
+  UilTemperature,
+  UilTear,
+  UilWind,
+  UilSun,
+  UilSunset,
+} from "@iconscout/react-unicons";
 
 function TempDetails() {
   return (
@@ -32,29 +38,33 @@ function TempDetails() {
         </div>
       </div>
       <div className="flex flex-row items-center justify-center gap-2 text-sm text-white font-light">
-        <div>
-          Rise:{" "}
+        <div className="flex items-center gap-1">
+          <UilSun size={18} />
+          Rise:
           <span span className="font-medium">
             04:50 AM
           </span>
         </div>
         <span className="h-4 w-[1px] bg-gray-200 rounded-sm"></span>
-        <div>
-          Set:{" "}
+        <div className="flex items-center gap-1">
+          <UilSunset size={18} />
+          Set:
           <span span className="font-medium">
             04:50 AM
           </span>
         </div>
         <span className="h-4 w-[1px] bg-gray-200 rounded-sm"></span>
-        <div>
-          High:{" "}
+        <div className="flex items-center gap-1">
+          <UilSunset size={18} />
+          High:
           <span span className="font-medium">
             21&deg;C
           </span>
         </div>
         <span className="h-4 w-[1px] bg-gray-200 rounded-sm"></span>
-        <div>
-          Low:{" "}
+        <div className="flex items-center gap-1">
+          <UilSunset size={18} />
+          Low:
           <span span className="font-medium">
             21&deg;C
           </span>
