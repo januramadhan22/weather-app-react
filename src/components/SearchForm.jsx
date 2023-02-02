@@ -36,7 +36,7 @@ function SearchForm({ setQuery, units, setUnits }) {
           onChange={(e) => setCity(e.currentTarget.value)}
           type="text"
           placeholder="Search City . . ."
-          className="w-60 px-3 py-2 rounded-md text-sm text-gray-500 border focus:border-cyan-600  focus:outline-none transition ease-linear duration-150"
+          className="w-full md:w-60 px-3 py-2 rounded-md text-sm text-gray-500 border focus:border-cyan-600  focus:outline-none transition ease-linear duration-150"
         />
         <UilSearch
           onClick={handleSearch}
@@ -53,7 +53,9 @@ function SearchForm({ setQuery, units, setUnits }) {
         <button
           onClick={handleChangeUnits}
           name="metric"
-          className="text-lg font-medium text-gray-100 hover:text-white hover:scale-125 cursor-pointer transition ease-linear duration-150"
+          className={`text-lg font-medium text-gray-100 hover:text-white hover:scale-125 cursor-pointer transition ease-linear duration-150 ${
+            units === "metric" && "text-orange-300 hover:text-orange-300"
+          }`}
         >
           &deg;C
         </button>
@@ -61,7 +63,9 @@ function SearchForm({ setQuery, units, setUnits }) {
         <button
           onClick={handleChangeUnits}
           name="imperial"
-          className="text-lg font-medium text-gray-100 hover:text-white hover:scale-125 cursor-pointer transition ease-linear duration-150"
+          className={`text-lg font-medium text-gray-100 hover:text-white hover:scale-125 cursor-pointer transition ease-linear duration-150 ${
+            units === "imperial" && "text-orange-300 hover:text-orange-300"
+          }`}
         >
           &deg;F
         </button>

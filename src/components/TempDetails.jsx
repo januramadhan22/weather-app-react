@@ -27,16 +27,16 @@ function TempDetails({
   },
 }) {
   return (
-    <div className="flex flex-col items-center gap-5">
+    <div className="w-full flex flex-col items-center gap-5">
       <h2 className="text-white text-lg">{details}</h2>
-      <div className="w-full flex flex-row justify-between items-center gap-10">
-        <div className="w-1/3 flex items-center justify-center">
+      <div className="w-full flex flex-col md:flex-row justify-between items-center gap-4 md:gap-0 lg:gap-10">
+        <div className="w-1/3 flex items-center justify-center md:justify-end">
           <img className="w-20" src={iconUrl(icon)} alt={details} />
         </div>
         <h1 className="w-1/3 text-4xl text-center text-white font-light">
           {temp.toFixed()}&deg;{units === "metric" ? "C" : "F"}
         </h1>
-        <div className="w-1/3 flex flex-col items-start gap-1 text-sm text-white font-light">
+        <div className="w-full md:w-1/3 flex flex-row md:flex-col justify-center items-start gap-1 text-xs md:text-sm text-white font-light">
           <div className="flex items-center gap-0.5">
             <UilTemperature size={18} />
             Real Feel:{" "}
@@ -54,7 +54,7 @@ function TempDetails({
           </div>
         </div>
       </div>
-      <div className="flex flex-row items-center justify-center gap-2 text-sm text-white font-light">
+      <div className="flex flex-row flex-wrap md:flex-nowrap items-center justify-center gap-2 text-xs md:text-sm text-white font-light">
         <div className="flex items-center gap-1">
           <UilSun size={18} />
           Rise:

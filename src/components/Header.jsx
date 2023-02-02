@@ -10,7 +10,7 @@ function Header({ setQuery }) {
   ];
 
   return (
-    <div className="w-full flex flex-row gap-8 justify-center">
+    <div className="w-full hidden sm:flex flex-row gap-8 justify-center">
       {cities.map((city) => (
         <button
           onClick={() => setQuery({ q: city.name })}
