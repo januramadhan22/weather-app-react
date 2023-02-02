@@ -24,7 +24,7 @@ function Forecast({ units, hourly, weekly }) {
           {hourly.map((item) => (
             <div
               key={item}
-              className="w-fit flex flex-col items-center text-sm font-light"
+              className="w-fit flex flex-col items-center text-xs md:text-sm font-light"
             >
               <p>{item.title}</p>
               <img
@@ -48,7 +48,7 @@ function Forecast({ units, hourly, weekly }) {
           {weekly.map((item) => (
             <div
               key={item}
-              className="w-fit flex flex-col items-center text-sm font-light text-center"
+              className="w-fit flex flex-col items-center text-xs md:text-sm font-light text-center"
             >
               <p>{item.title}</p>
               <div className="flex justify-center">

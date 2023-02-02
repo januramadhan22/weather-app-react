@@ -22,8 +22,8 @@ function App() {
   }, [query, units]);
 
   return (
-    <div className="min-h-screen max-w-screen-xl py-5">
-      <div className="mx-auto w-11/12 sm:w-10/12 lg:w-8/12 h-full bg-gradient-to-br from-cyan-300 to-blue-600 rounded-md shadow-md flex flex-col items-center gap-5 p-5">
+    <div className="min-h-screen max-w-screen-xl flex justify-center items-center py-5">
+      <div className="mx-auto w-11/12 sm:w-10/12 lg:w-6/12 h-full bg-gradient-to-br from-cyan-300 to-blue-600 rounded-md shadow-md flex flex-col items-center gap-5 p-5">
         <Header setQuery={setQuery} />
         <SearchForm setQuery={setQuery} units={units} setUnits={setUnits} />
         {weather && (
