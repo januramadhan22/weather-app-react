@@ -1,6 +1,6 @@
 import React from "react";
 
-function Header() {
+function Header({ setQuery }) {
   const cities = [
     { id: 1, name: "London" },
     { id: 2, name: "Jakarta" },
@@ -13,6 +13,7 @@ function Header() {
     <div className="w-full flex flex-row gap-8 justify-center">
       {cities.map((city) => (
         <button
+          onClick={() => setQuery({ q: city.name })}
           key={city.id}
           className="font-semibold text-gray-200 hover:text-white transition ease-linear"
         >

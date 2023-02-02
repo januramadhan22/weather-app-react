@@ -1,53 +1,69 @@
 import React from "react";
+import Slider from "react-slick";
+import { iconUrl } from "../utils/services/service";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
-function Forecast() {
-  const hour = [1, 2, 3, 4, 5];
-  const day = ["Wed", "Thurs", "Fri", "Sat", "Sun"];
+function Forecast({ units, hourly, weekly }) {
+  const settings = {
+    dots: false,
+    infinite: false,
+    arrows: false,
+    speed: 500,
+    slidesToShow: 5,
+    swipeToSlide: true,
+  };
 
   return (
-    <div className="w-7/12 flex flex-col gap-5 text-white">
+    <div className="w-full sm:w-10/12 md:w-8/12 lg:w-7/12 flex flex-col gap-5 text-white">
       {/* Hourly Forecast */}
       <div className="w-full flex flex-col gap-2">
-        <h2>HOURLY FORECAST</h2>
+        <h2>FORECAST FOR 3 HOUR</h2>
         <hr />
         <div className="w-full flex flex-row justify-between items-center">
-          {hour.map((hr) => (
+          {hourly.map((item) => (
             <div
-              key={hr}
+              key={item}
               className="w-fit flex flex-col items-center text-sm font-light"
             >
-              <p>02:00 PM</p>
+              <p>{item.title}</p>
               <img
                 className="w-12"
-                src="http://openweathermap.org/img/wn/04n.png"
-                alt=""
+                src={iconUrl(item.icon)}
+                alt={item.status}
               />
-              <p>19&deg;C</p>
+              <p>
+                {item.temp.toFixed()}&deg;{units === "metric" ? "C" : "F"}
+              </p>
             </div>
           ))}
         </div>
       </div>
 
-      {/* Daily Forecast */}
+      {/* Weekly Forecast */}
       <div className="w-full flex flex-col gap-2">
-        <h2>DAILY FORECAST</h2>
+        <h2>WEEKLY FORECAST</h2>
         <hr />
-        <div className="w-full flex flex-row justify-between items-center">
-          {day.map((day) => (
+        <Slider {...settings}>
+          {weekly.map((item) => (
             <div
-              key={day}
-              className="w-fit flex flex-col items-center text-sm font-light"
+              key={item}
+              className="w-fit flex flex-col items-center text-sm font-light text-center"
             >
-              <p>{day}</p>
-              <img
-                className="w-12"
-                src="http://openweathermap.org/img/wn/04n.png"
-                alt=""
-              />
-              <p>19&deg;C</p>
+              <p>{item.title}</p>
+              <div className="flex justify-center">
+                <img
+                  className="w-12"
+                  src={iconUrl(item.icon)}
+                  alt={item.status}
+                />
+              </div>
+              <p>
+                {item.temp.toFixed()}&deg;{units === "metric" ? "C" : "F"}
+              </p>
             </div>
           ))}
-        </div>
+        </Slider>
       </div>
     </div>
   );
