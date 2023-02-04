@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+<div align="center">
+    <br>
+    
+# Meramal Cuaca
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<strong>This project is an online Weather App.<strong>
 
-## Available Scripts
+</div>
 
-In the project directory, you can run:
+## Feature and Tools
 
-### `npm start`
+In this application, users can see various kinds of weather conditions that are happening in various locations. This application also provides a feature that can change the type of temperature as desired with Celsius or Fahrenheit units. In addition, there is also a location button that will automatically point to the user's location directly, with the condition that the location feature is turned on on the device used.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<br>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This application is made using React JS as its main technology which is supported by other libraries as a support. Such as Tailwind CSS, Iconscout, Weather API, and Vercel.
 
-### `npm test`
+<div>
+    <a href="https://reactjs.org/">
+    <img src="https://drive.google.com/uc?export=view&id=1DMqkFq0deeshUptQYcT6gWuCRgCO1ecD" title="React JS" alt="React JS" width="40"/>
+    </a>&nbsp;
+    <a href="https://www.javascript.com/">
+    <img src="https://drive.google.com/uc?export=view&id=1sYi_QrPDZEsF_1-5eQNRa84YFkcA_Qmi" title="Javascript" alt="Javascript" width="40"/>
+    </a>&nbsp;
+    <a href="https://www.w3schools.com/html/">
+    <img src="https://drive.google.com/uc?export=view&id=1XPJKzToBlrQmMSff1NDoSCftzk0QQEJV" title="HTML 5" alt="HTML 5" width="40"/></a>&nbsp;
+    <a href="https://tailwindcss.com/">
+    <img src="https://drive.google.com/uc?export=view&id=1nMSZnnQmKXMfNfVpIWaTZlBDCqmSL_sx" title="Tailwind CSS" alt="Tailwind CSS" width="40"/></a>&nbsp;
+    <a href="https://code.visualstudio.com/">
+    <img src="https://drive.google.com/uc?export=view&id=1z9m4T_AYh_1O2qSCWdNn7-TmplDBgink" title="Visual Studio" alt="Visual Studio" width="40"/></a>&nbsp;
+    <a href="https://vercel.com/">
+    <img src="https://drive.google.com/uc?export=view&id=1i3h9awG8PtKshjU2Jsv1CBns4A32Pn8C" title="Vercel" alt="Vercel" width="40"/></a>&nbsp;
+    <a href="https://fonts.google.com">
+    <img src="https://drive.google.com/uc?export=view&id=1Mp9gYxSq4bB6jmy9-94aMzs2dATEWT_7" title="Google Fonts" alt="Google Font"  height="40"  width="220"/></a>&nbsp;
+    <a href="https://www.unsplash.com/">
+    <img src="https://drive.google.com/uc?export=view&id=1GbUbHrvIyTGyMj7jhW8pR4FmReQO6fhU" title="Pexels" alt="Unsplash"  height="40" width="180"/></a>&nbsp;
+    <a href="https://www.iconscout.com/">
+    <img src="https://cdna.iconscout.com/img/iconscout-logo.color.e58b57b.svg" title="Pexels" alt="Iconscout"  height="40" width="180"/></a>&nbsp;
+    <a href="https://openweathermap.org/">
+    <img src="https://openweathermap.org/themes/openweathermap/assets/img/logo_white_cropped.png" alt="OpenWeatherAPI"/>
+</div>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<br>
 
-### `npm run build`
+## Status Project
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This project is currently in development.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<br>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Deployment
 
-### `npm run eject`
+This project deployed in Vercel: https://meramal-cuaca.vercel.app
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
