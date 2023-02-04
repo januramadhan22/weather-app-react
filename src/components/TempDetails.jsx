@@ -36,7 +36,7 @@ function TempDetails({
         <h1 className="w-1/3 text-4xl text-center text-white font-light">
           {temp.toFixed()}&deg;{units === "metric" ? "C" : "F"}
         </h1>
-        <div className="w-full md:w-1/3 flex flex-row md:flex-col justify-center items-start gap-1 text-xs md:text-sm text-white font-light">
+        <div className="w-full md:w-1/3 flex flex-row md:flex-col justify-center items-center md:items-start gap-1 text-xs md:text-sm text-white font-light">
           <div className="flex items-center gap-0.5">
             <UilTemperature size={18} />
             Real Feel:{" "}
