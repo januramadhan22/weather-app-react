@@ -13,7 +13,7 @@ In this application, users can see various kinds of weather conditions that are 
 
 <br>
 
-This application is made using React JS as its main technology which is supported by other libraries as a support. Such as Tailwind CSS, Iconscout, Weather API, and Vercel.
+This application is made using React JS as its main technology which is supported by other libraries as a support. Such as Tailwind CSS, Iconscout, Weather API, Vercel, etc.
 
 <div>
     <a href="https://reactjs.org/">
@@ -37,7 +37,7 @@ This application is made using React JS as its main technology which is supporte
     <a href="https://www.iconscout.com/">
     <img src="https://cdna.iconscout.com/img/iconscout-logo.color.e58b57b.svg" title="Pexels" alt="Iconscout"  height="40" width="180"/></a>&nbsp;
     <a href="https://openweathermap.org/">
-    <img src="https://openweathermap.org/themes/openweathermap/assets/img/logo_white_cropped.png" alt="OpenWeatherAPI" height="40/></a>&nbsp;
+    <img src="https://openweathermap.org/themes/openweathermap/assets/img/logo_white_cropped.png" alt="OpenWeatherAPI" height="40"/></a>&nbsp;
 </div>
 
 <br>
@@ -51,5 +51,4 @@ This project is currently in development.
 ## Deployment
 
 This project deployed in Vercel: https://meramal-cuaca.vercel.app
-
 
