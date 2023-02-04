@@ -37,7 +37,7 @@ This application is made using React JS as its main technology which is supporte
     <a href="https://www.iconscout.com/">
     <img src="https://cdna.iconscout.com/img/iconscout-logo.color.e58b57b.svg" title="Pexels" alt="Iconscout"  height="40" width="180"/></a>&nbsp;
     <a href="https://openweathermap.org/">
-    <img src="https://openweathermap.org/themes/openweathermap/assets/img/logo_white_cropped.png" alt="OpenWeatherAPI"/>
+    <img src="https://openweathermap.org/themes/openweathermap/assets/img/logo_white_cropped.png" alt="OpenWeatherAPI" height="40/></a>&nbsp;
 </div>
 
 <br>
